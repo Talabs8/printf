@@ -49,6 +49,15 @@ int _printf(const char *format, ...)
 				write(1, string, str_len);
 				print_char += str_len;
 			}
+				else if (*format == 'i' || *format == 'd')
+				{
+					int num = va_arg(lists, int);
+					char buffer[12];
+					int length = snprintf(buffer, sizeof(buffer), "%d", num);
+
+					write(1, buffer, length);
+					print_char += length;
+				}
 		}
 		format++;
 	}
