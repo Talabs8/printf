@@ -2,6 +2,7 @@
 
 /**
  * _printf - The print function
+ * that formats to the standard output
  * @format: format.
  * Return: print_char
  */
