@@ -2,7 +2,7 @@
 
 /**
  * _printf - The print function
- * comment to the main.h file
+ * comment to the main.h file with integers and chars
  * @format: format.
  * Return: print_char
  */
